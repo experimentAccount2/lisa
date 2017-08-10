@@ -66,11 +66,11 @@ install:
     
 # command to run tests
 script: 
-  - nosetests --with-coverage --verbose --cover-package=lisa --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_lisa_b067b13e36_2
-  - python -m properform Push 47.88.50.110:15554 asdf_lisa_b067b13e36_2 ./profile_lisa_b067b13e36_2
+  - nosetests --with-coverage --verbose --cover-package=lisa --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_lisa_b067b13e36_3
+  - python -m properform Push 47.88.50.110:15554 asdf_lisa_b067b13e36_3 ./profile_lisa_b067b13e36_3
 
 # script: nosetests --with-coverage --verbose --nocapture --nologcapture --cover-package=lisa
 # script: nosetests --with-coverage --cover-package=lisa
 after_success:
     - coveralls
-#2017-08-10 14:15:47 modified at 0#2017-08-10 14:15:55 modified at 1#2017-08-10 14:16:01 modified at 2
+#2017-08-10 14:15:47 modified at 0#2017-08-10 14:15:55 modified at 1#2017-08-10 14:16:01 modified at 2#2017-08-10 14:16:12 modified at 3
